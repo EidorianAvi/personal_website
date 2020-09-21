@@ -10,15 +10,24 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/aZMOCxSa3Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
+            <div class="item-description">
+                <h2>smallTalk</h2>
+            </div>
             <div class="portfolio-item">
                 <div class="iframe-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/5GngnwWPQiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
+            <div class="item-description">
+                <h2>theRack</h2>
+            </div>
             <div class="portfolio-item">
                 <div class="iframe-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/XglSvmMSHPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+            </div>
+            <div class="item-description">
+                <h2>Jedi Archives</h2>
             </div>
         </div>
     </div>
