@@ -1,18 +1,22 @@
 <template>
   <div id="app">
     <SideNavigator />
-    <About /> 
+    <About />
+    <Portfolio />  
   </div>
 </template>
 
 <script>
-import SideNavigator from './components/SideNavigator'
-import About from './components/About'
+import SideNavigator from './components/SideNavigator';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+
 export default {
   name: 'app',
   components: {
     SideNavigator,
     About,
+    Portfolio
   }
 }
 </script>
