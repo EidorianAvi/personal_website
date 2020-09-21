@@ -20,7 +20,9 @@
 
 <script>
 export default {
+    methods: {
 
+    }
 }
 </script>
 
@@ -39,7 +41,7 @@ export default {
     font-size:  4vh;
     transition: 200ms;
     text-align: right;
-        direction: rtl;
+    direction: rtl;
 }
 .dot li:hover {
     transition: 200ms;
@@ -56,22 +58,22 @@ export default {
 }
 @media screen and (min-width: 720px) {	
     .sidebar {
-        right: 1vw;
+        right: 1.5vw;
         position: fixed;
         top: 35vh;
         z-index: 1;
     }
     .dot li {
-        margin-top: 1vh;
+        margin-top: 3vh;
         cursor: pointer;
-        font-size:  2vw;
-        transition: 200ms;
+        font-size: 2vw;
+        transition: 500ms;
         text-align: right;
         direction: rtl;
     }
     .dot li:hover {
         transition: 200ms;
-        color: grey;
+        color: red;
     }
     .dot-text {
         position: relative;
@@ -80,7 +82,7 @@ export default {
     }
     .dot li:hover .dot-text {
         left: 0;
-        transition: 400ms;
+        transition: 600ms;
     }
 }
 </style>
