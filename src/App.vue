@@ -46,6 +46,23 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url('./assets/images/background.jpg') no-repeat center fixed;
+  background: url('./assets/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+  
+}
+
 </style>

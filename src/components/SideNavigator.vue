@@ -60,13 +60,13 @@ export default {
     .sidebar {
         right: 1.5vw;
         position: fixed;
-        top: 35vh;
+        top: 27vh;
         z-index: 1;
     }
     .dot li {
         margin-top: 3vh;
         cursor: pointer;
-        font-size: 2vw;
+        font-size: 2.5vw;
         transition: 500ms;
         text-align: right;
         direction: rtl;
