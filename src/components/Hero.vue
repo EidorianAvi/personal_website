@@ -31,7 +31,11 @@ export default {
 }
 
 h1 {
-    font-size: 13rem;
+    font-size: 10rem;
+    background: rgb(232,232,236);
+    background: linear-gradient(0deg, rgba(232,232,236,1) 0%, rgba(30,30,32,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h6 { 

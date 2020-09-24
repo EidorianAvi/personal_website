@@ -38,11 +38,13 @@ export default {
 <style>
 
 .portfolio {
-    width: 90vw;
+    margin-top: 20rem;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .section-heading h1 {
@@ -63,6 +65,7 @@ export default {
     width: 10%;
     margin-top: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -73,8 +76,10 @@ export default {
 }
 
 .iframe-container iframe{
+    margin-bottom: 2rem;
     top: 0;
     left: 0;
 }
+
 
 </style>

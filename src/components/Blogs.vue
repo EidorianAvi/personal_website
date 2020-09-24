@@ -28,5 +28,8 @@ export default {
 </script>
 
 <style>
-
+.blogs {
+    height: 100vh;
+    width: 100%;
+}
 </style>
