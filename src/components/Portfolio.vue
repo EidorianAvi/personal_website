@@ -42,9 +42,10 @@ export default {
 <style>
 .iframe-container{
     position: relative;
-    width: 100%;
+    width: 30%;
+    height: 30%;
     padding-bottom: 56.25%;
-    height: 0;
+    /* height: 0; */
 }
 
 .iframe-container iframe{

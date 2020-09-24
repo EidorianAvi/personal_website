@@ -2,7 +2,7 @@
   <div class="about-page">
     <div class="container">
         <div class="portfolio-image">
-            <img src="../assets/images/portrait.jpg" alt="Hiking Adventure">
+            <img src="../assets/images/portrait.jpg" alt="Hiking Adventure" class="portrait">
         </div>
         <div class="about-details">
             <div class="about-heading">
@@ -42,10 +42,19 @@ export default {
 </script>
 
 <style scoped>
-.about-page .container {
+.about-page {
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+
+}
+
+
+.container {
+    /* width: 80%; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about-heading {
@@ -60,13 +69,19 @@ export default {
     opacity: .5;
 }
 
-.profile-img {
-    flex: 1;
-    margin-right: 5rem;
+
+.portfolio-image {
+    display: flex;
+    justify-content: center;
+}
+
+.portrait {
+    width: 60%;    
 }
 
 .about-details {
     flex: 1;
+    padding: 5rem;
 }
 
 li {
