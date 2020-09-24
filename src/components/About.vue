@@ -104,6 +104,11 @@ li {
     opacity: .9;
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
@@ -118,6 +123,9 @@ li {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+
+
+  
 }
 
 @media only screen and (min-width: 992px) {
