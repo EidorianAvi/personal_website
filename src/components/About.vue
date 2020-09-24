@@ -43,10 +43,10 @@ export default {
 
 <style scoped>
 .about-page {
-    display: flex;
+    /* display: flex; */
     width: 100%;
+    height: 100%;
     padding: 5rem;
-
 }
 
 
@@ -55,6 +55,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* transform: translate( -50%, -50%); */
 }
 
 .about-heading {
