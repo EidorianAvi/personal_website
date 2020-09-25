@@ -3,7 +3,7 @@
     <!-- <SideNavigator /> -->
     <Hero />
     <About />
-    <!-- <Portfolio />  -->
+    <Portfolio /> 
     <!-- <Blogs />  -->
     <!-- <Contact /> -->
   </div>
@@ -12,7 +12,7 @@
 <script>
 import Hero from './components/Hero';
 import About from './components/About';
-// import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio';
 // import Blogs from './components/Blogs';
 // import Contact from './components/Contact';
 // import SideNavigator from './components/SideNavigator';
@@ -22,7 +22,7 @@ export default {
   components: {
     Hero,
     About,
-    // Portfolio,
+    Portfolio,
     // Blogs,
     // Contact,
     // SideNavigator,

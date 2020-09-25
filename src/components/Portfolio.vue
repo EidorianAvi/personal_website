@@ -3,7 +3,6 @@
         <div class="container">
             <div class="section-heading">
                 <h1>Portfolio</h1>
-                <h6>Recent Work</h6>
             </div>
             <div class="demo-videos">
                 <div class="portfolio-item">
@@ -35,51 +34,76 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+    width: 100%;
+    }
+
+    .section-heading h1 {
+        font-size: 6rem;
+        opacity: .5;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .demo-videos h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 4rem;
+        font-style: italic;
+        color: lightgray;
+    }
+
+    .iframe-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .iframe-container iframe{
+        max-width: 80%;
+        height: auto;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .section-heading h1 {
+    font-size: 1rem;
+    opacity: .5;
+    }
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 .portfolio {
-    margin-top: 20rem;
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
 }
 
-.section-heading h1 {
-    font-size: 10rem;
-    opacity: .5;
-}
-
-.section-heading h6 { 
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 300;
-    margin-top: 3rem;
-    opacity: .7;
-
-}
-
-.demo-videos {
-    width: 10%;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.iframe-container{
-    padding: 5rem;
-    width: 80%;
-    /* padding-bottom: 56.25%; */
-}
-
-.iframe-container iframe{
-    margin-bottom: 2rem;
-    top: 0;
-    left: 0;
-}
 
 
 </style>
