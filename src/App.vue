@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <SideNavigator /> -->
     <Hero />
-    <!-- <About /> -->
+    <About />
     <!-- <Portfolio />  -->
     <!-- <Blogs />  -->
     <!-- <Contact /> -->
@@ -11,7 +11,7 @@
 
 <script>
 import Hero from './components/Hero';
-// import About from './components/About';
+import About from './components/About';
 // import Portfolio from './components/Portfolio';
 // import Blogs from './components/Blogs';
 // import Contact from './components/Contact';
@@ -21,7 +21,7 @@ export default {
   name: 'app',
   components: {
     Hero,
-    // About,
+    About,
     // Portfolio,
     // Blogs,
     // Contact,
