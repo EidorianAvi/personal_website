@@ -101,7 +101,7 @@ export default {
 
 .portfolio {
     max-width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 

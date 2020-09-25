@@ -28,8 +28,58 @@ export default {
 </script>
 
 <style>
-.blogs {
-    height: 100vh;
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
     width: 100%;
+    }
+
+    .section-heading h1 {
+        font-size: 6rem;
+        opacity: .5;
+        text-align: center;
+    }
+
+    .banner-text h6 {
+        font-size: 1.75rem;
+    }
+
+    li {
+        font-size: 2rem;
+        padding: 2rem;
+        font-style: italic;
+        text-decoration-line: underline;
+        opacity: .7;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blogs {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: 100vh;
 }
 </style>
