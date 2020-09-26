@@ -9,22 +9,22 @@
                 <h1>About</h1>
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus eius, voluptatum impedit et alias consequatur, nisi earum at repellat aliquid velit officiis placeat ipsum assumenda. Totam dolorum ad minima molestias reiciendis impedit earum tenetur dolorem aut neque corrupti mollitia optio, voluptatem officiis? Alias excepturi praesentium qui quisquam modi explicabo consequatur voluptates magnam recusandae exercitationem, tempora cupiditate minus aut ex?
+               Welcome to my page, make yourself comfortable. The name is Adrian, and I'm an up and coming Full Stack Software Engineer just looking to live, learn and build. Two things I believe down to my core are that there's always room for improvement and Han shot first. In my free time you can likely find me arguing with my dog, watching/reading Star Wars or learning spoken and written languages, currently working on my Spanish and Japanese. I have dreams of traveling far and wide and building bigger and better. 
             </p>
             <div class="social-media">
                 <ul class="nav-list">
                     <li>
-                        <a href="#" class="icon-link">
+                        <a href="https://www.linkedin.com/in/eidorianavi/" class="icon-link">
                             <i class="fa fa-linkedin-square"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="icon-link">
+                        <a href="https://github.com/EidorianAvi" class="icon-link">
                             <i class="fa fa-github-square"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="icon-link">
+                        <a href="https://twitter.com/EidorianAvi" class="icon-link">
                             <i class="fa fa-twitter-square"></i>
                         </a>
                     </li>
@@ -52,6 +52,14 @@ export default {
     .about-heading h1 {
         font-size: 6rem;
         opacity: .5;
+        margin-top: 4rem;
+    }
+
+    .about-details p { 
+        font-size: 1.5rem;
+        max-width: 100%;
+        padding: 2rem;
+        line-height: 2rem;
     }
 
 }
@@ -110,10 +118,6 @@ export default {
     width: 60%;    
 }
 
-.about-details {
-    flex: 1;
-    padding: 5rem;
-}
 
 li {
     list-style-type: none;

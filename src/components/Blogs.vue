@@ -47,7 +47,8 @@ export default {
 
     li {
         font-size: 2rem;
-        padding: 2rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
         font-style: italic;
         text-decoration-line: underline;
         opacity: .7;
