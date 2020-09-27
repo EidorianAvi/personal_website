@@ -35,17 +35,18 @@ export default {
 
 
     .banner-text {
-        margin-top: 30rem;
+        width: 80vw;
+        margin-left: 10vw; 
+        margin-top: 25rem;
         font-family: 'Permanent Marker', cursive;
         text-align: center;
     }
 
     h1 {
-        width: 100%;
-        font-size: 6rem;
+        font-size: 5rem;
         background: rgb(232,232,236);
         /* background: linear-gradient(0deg, rgba(232,232,236,1) 0%, rgba(30,30,32,1) 100%); */
-        background: linear-gradient(bottom-left #93a5cf  0%,  #e4efe9  100%);
+        background: linear-gradient(0deg, #93a5cf  0%,  #e4efe9  100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -54,6 +55,8 @@ export default {
         font-size: 2rem;
         font-weight: 300;
     }
+
+    
 }
 
 @media only screen and (min-width: 768px) {

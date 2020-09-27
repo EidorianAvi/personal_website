@@ -13,21 +13,25 @@
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/aZMOCxSa3Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <p>smallTalk is the middleman to interest and hobby driven conversation. Sometimes it's difficult to  <span id="dots">...see more</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
                 </div>
                 <div class="portfolio-item">
                     <h2>theRack</h2>
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5GngnwWPQiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...see more</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
                 </div>
                 <div class="portfolio-item">
                     <h2>Jedi Archives</h2>
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/XglSvmMSHPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...see more</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
                 </div>
             </div>
         </div>
+        <div class="border"></div>
     </div>
 </template>
 
@@ -54,12 +58,12 @@ export default {
 
     .recent-projects {
         margin-left: 4rem;
-        width: 60%;
+        width: 50%;
         border-bottom: 1px lightgrey solid;
     }
 
     .recent-projects h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 300;
         opacity: .8;
         text-align: left;
@@ -69,7 +73,8 @@ export default {
     .demo-videos h2 {
         font-size: 1.5rem;
         text-align: left;
-        padding: 4rem;
+        padding-top: 3rem;
+        padding-left: 4.4rem;
         font-style: italic;
         color: lightgray;
     }
@@ -80,11 +85,28 @@ export default {
     }
 
     .iframe-container iframe{
-        max-width: 80%;
+        max-width: 80vw;
         height: auto;
     }
 
+    p {
+        margin-top: 1vh;
+        margin-left: 10vw;
+        max-width: 80vw;
+        font-size: 1.3rem;
+    }
 
+
+    #more {
+        display: none;
+    }
+
+    .border {
+        margin-top: 16vh;
+        margin-left: 35vw;
+        width: 30vw;
+        border-bottom: 1px solid lightgrey;
+    }
 
 }
 

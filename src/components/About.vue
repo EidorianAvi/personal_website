@@ -30,6 +30,7 @@
                     </li>
                 </ul>
             </div>
+            <div class="border"></div>
         </div>
     </div>      
   </div>
@@ -61,6 +62,18 @@ export default {
         padding: 2rem;
         line-height: 2rem;
     }
+
+    .social-media {
+        margin-bottom: 6rem;
+    }
+
+    .border {
+        margin-left: 35vw;
+        width: 30vw;
+        border-bottom: 1px solid lightgrey;
+    }
+
+
 
 }
 
