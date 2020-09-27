@@ -3,17 +3,17 @@
       <div class="container">
           <h1>Contact</h1>
           <div class="contact-form">
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
-                <label for="email">Email:</label><br>
+            <form action="mailto:reneavila1993@gmail.com" >
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Why you're reaching out" required><br>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Please enter your email" required><br>
-                <label for="subject">Subject:</label><br>
-                <textarea name="subject" id="subject" cols="10" rows="10"></textarea><br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="10" rows="10"></textarea><br>
                 <input type="submit" value="Let's chat">
             </form>
           </div>
-          <h6>I'd love to hear from you</h6>
+          <!-- <h6>I'd love to hear from you</h6> -->
       </div>
   </div>
 </template>
@@ -36,7 +36,7 @@ export default {
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        height: 100vh;
+        height: 80vh;
     }
 
     .contact h1 { 

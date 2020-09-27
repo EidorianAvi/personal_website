@@ -39,8 +39,8 @@ export default {
 }
 
 html {
+  font-family: 'Epilogue', sans-serif;
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
   color: #eee;
   max-width: 100%;
 }
