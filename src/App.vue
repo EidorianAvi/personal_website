@@ -48,7 +48,7 @@ html {
 body {
   max-width: 100%;
   height: 100%;
-  background: url('./assets/images/background.jpg') no-repeat center center fixed;
+  background: url('./assets/images/background2.jpg') no-repeat center center fixed;
   background-size: 100% 100%;
 }
 

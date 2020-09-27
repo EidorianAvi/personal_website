@@ -2,7 +2,7 @@
   <div class="about-page">
     <div class="container">
         <div class="portfolio-image">
-            <img src="../assets/images/journey.jpg" alt="Hiking Adventure" class="portrait">
+            <img src="../assets/images/portrait.jpg" alt="Hiking Adventure" class="portrait">
         </div>
         <div class="about-details">
             <div class="about-heading">
@@ -92,6 +92,7 @@ export default {
 }
 
 .about-page {
+    margin-top: 5rem;
     max-width: 100%;
     height: 100vh;
 }

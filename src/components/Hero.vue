@@ -21,12 +21,38 @@ export default {
     width: 100%;
     }
 
-    .banner-text h1 {
-        font-size: 6rem;
-    }
-
     .banner-text h6 {
         font-size: 1.75rem;
+    }
+
+    .banner-page {
+        background: url('../assets/images/journey2.jpg') no-repeat center center fixed;
+        background-size: 100% auto;
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+    }
+
+
+    .banner-text {
+        margin-top: 30rem;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 6rem;
+        background: rgb(232,232,236);
+        /* background: linear-gradient(0deg, rgba(232,232,236,1) 0%, rgba(30,30,32,1) 100%); */
+        background: linear-gradient(bottom-left #93a5cf  0%,  #e4efe9  100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h6 { 
+        font-size: 2rem;
+        font-weight: 300;
     }
 }
 
@@ -52,28 +78,5 @@ export default {
   display: table;
 }
 
-.banner-page {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
 
-
-.banner-text {
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-}
-
-h1 {
-    font-size: 10rem;
-    background: rgb(232,232,236);
-    background: linear-gradient(0deg, rgba(232,232,236,1) 0%, rgba(30,30,32,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h6 { 
-    font-size: 2rem;
-    font-weight: 300;
-}
 </style>

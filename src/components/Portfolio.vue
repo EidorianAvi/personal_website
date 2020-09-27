@@ -6,7 +6,9 @@
             </div>
             <div class="demo-videos">
                 <div class="portfolio-item">
-                    <h1>Recent Projects</h1>
+                    <div class="recent-projects">
+                        <h1>Recent Projects</h1>
+                    </div>
                     <h2>smallTalk</h2>
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/aZMOCxSa3Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -50,12 +52,18 @@ export default {
         margin-bottom: 2rem;
     }
 
-    .demo-videos h1 {
+    .recent-projects {
+        margin-left: 4rem;
+        width: 60%;
+        border-bottom: 1px lightgrey solid;
+    }
+
+    .recent-projects h1 {
         font-size: 2rem;
         font-weight: 300;
         opacity: .8;
-        text-align: center;
-        text-decoration: underline;
+        text-align: left;
+        /* text-decoration: underline; */
     }
 
     .demo-videos h2 {
@@ -109,6 +117,7 @@ export default {
 }
 
 .portfolio {
+    margin-top: 10rem;
     max-width: 100%;
     height: 110vh;
 }
