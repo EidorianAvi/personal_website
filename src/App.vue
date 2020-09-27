@@ -5,7 +5,7 @@
     <About />
     <Portfolio /> 
     <Blogs /> 
-    <!-- <Contact /> -->
+    <Contact />
   </div>
 </template>
 
@@ -14,7 +14,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Blogs from './components/Blogs';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 // import SideNavigator from './components/SideNavigator';
 
 export default {
@@ -24,7 +24,7 @@ export default {
     About,
     Portfolio,
     Blogs,
-    // Contact,
+    Contact,
     // SideNavigator,
   }
 }

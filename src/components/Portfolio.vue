@@ -6,6 +6,7 @@
             </div>
             <div class="demo-videos">
                 <div class="portfolio-item">
+                    <h1>Recent Projects</h1>
                     <h2>smallTalk</h2>
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/aZMOCxSa3Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -47,6 +48,14 @@ export default {
         opacity: .5;
         text-align: center;
         margin-bottom: 2rem;
+    }
+
+    .demo-videos h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        opacity: .8;
+        text-align: center;
+        text-decoration: underline;
     }
 
     .demo-videos h2 {

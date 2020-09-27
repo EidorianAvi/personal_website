@@ -35,6 +35,14 @@ export default {
     width: 100%;
     }
 
+    .blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 80vh;
+    }
+
     .section-heading h1 {
         font-size: 6rem;
         opacity: .5;
@@ -78,9 +86,5 @@ export default {
   display: table;
 }
 
-.blogs {
-    margin-top: 2rem;
-    max-width: 100%;
-    height: 100vh;
-}
+
 </style>

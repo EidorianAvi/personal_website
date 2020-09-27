@@ -2,16 +2,18 @@
   <div class="contact" id="contact">
       <div class="container">
           <h1>Contact</h1>
-          <h6>Lets chat</h6>
-          <form action="">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Please enter your email" required>
-              <label for="subject">Subject:</label>
-              <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-              <input type="submit" value="submit">
-          </form>
+          <div class="contact-form">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Please enter your email" required><br>
+                <label for="subject">Subject:</label><br>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea><br>
+                <input type="submit" value="Let's chat">
+            </form>
+          </div>
+          <h6>I'd love to hear from you</h6>
       </div>
   </div>
 </template>
@@ -23,5 +25,79 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 600px) {
+    
+    [class*="col-"] {
+    width: 100%;
+    }
 
+    .contact { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .contact h1 { 
+        font-size: 6rem;
+        opacity: .5;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .contact h6 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        width: 100%;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 30%;
+        margin-left: 20rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
