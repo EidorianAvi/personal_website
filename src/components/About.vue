@@ -9,7 +9,7 @@
                 <h1>About</h1>
             </div>
             <p>
-               Welcome to my page, make yourself comfortable. The name is Adrian, and I'm an up and coming Full Stack Software Engineer just looking to live, learn and build. Two things I believe down to my core are that there's always room for improvement and Han shot first. In my free time you can likely find me arguing with my dog, watching/reading Star Wars or learning spoken and written languages, currently working on my Spanish and Japanese. I have dreams of traveling far and wide and building bigger and better. 
+               Welcome to my page, make yourself comfortable. The name is Adrian, and I'm an up and coming Full Stack Software Engineer just looking to live, learn and build. Two things I believe down to my core are 1. there's always room for improvement and 2. Han shot first. In my free time you can likely find me arguing with my dog, watching/reading Star Wars or learning spoken and written languages, i'm currently working on my Spanish and Japanese. I have dreams of traveling far and wide and building bigger and better for myself and the world around me. If you'd like to see more on my personal life click on my mug above. 
             </p>
             <div class="social-media">
                 <ul class="nav-list">
@@ -56,6 +56,8 @@ export default {
         margin-top: 4rem;
     }
 
+
+
     .about-details p { 
         font-size: 1.5rem;
         max-width: 100%;
@@ -64,6 +66,9 @@ export default {
     }
 
     .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         margin-bottom: 6rem;
     }
 
@@ -107,7 +112,7 @@ export default {
 .about-page {
     margin-top: 5rem;
     max-width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 .container {

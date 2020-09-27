@@ -13,21 +13,21 @@
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/aZMOCxSa3Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p>smallTalk is the middleman to interest and hobby driven conversation. Sometimes it's difficult to  <span id="dots">...see more</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <p>smallTalk is the middleman to interest and hobby driven conversation. Sometimes it's difficult to  <span class="see-more" @click="expandDescription(1)">...see more</span><span class="more">spark up a conversation about topics that are near and dear to you but have nobody to relate with. That's where smallTalk comes in it's the one stop shop to meet, converse, and connect with likeminded individuals. Technologies used were: Flutter, Dart, Firebase, and Firestore. </span><span class="see-less">...see less</span></p>
                 </div>
                 <div class="portfolio-item">
                     <h2>theRack</h2>
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5GngnwWPQiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560"  height="315" src="https://www.youtube.com/embed/5GngnwWPQiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...see more</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <p>If you're anything like me you love a good pair of sneakers but have a hard time picking out the perfect<span class="see-more" @click="expandDescription(2)">...see more</span><span class="more">pair and that's what theRack was created for. Select from hundreds of shoes in the catalogue and narrow it down to the perfect pair. Technologies used were: React, JavaScript, Ruby on Rails, and JWT.</span><span class="see-less">...see less</span></p>
                 </div>
                 <div class="portfolio-item">
                     <h2>Jedi Archives</h2>
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/XglSvmMSHPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...see more</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <p>A common problem we all face is that our Star Wars collection is just getting larger by the day and it's<span class="see-more" @click="expandDescription(3)">...see more</span><span class="more">getting difficult to keep track. The Jedi Archives were created to have one place to store all Novels and Graphic Novels for collection management. Technologies used were: JavaScript, Ruby on Rails, CSS3, HTML5.</span><span class="see-less">...see less</span></p>
                 </div>
             </div>
         </div>
@@ -37,6 +37,20 @@
 
 <script>
 export default {
+    methods: {
+        expandDescription(number) {
+            number;
+            var dots = document.querySelectorAll(".dots");
+            var moreText = document.querySelectorAll(".more");
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                moreText.style.display = "none";
+           } else {
+                dots.style.display = "none";
+                moreText.style.display = "inline";
+            }
+        },
+    }
 
 }
 </script>
@@ -96,8 +110,18 @@ export default {
         font-size: 1.3rem;
     }
 
+    .see-more {
+        display: show;
+        color: grey;
+        font-weight: 600;
+    }
 
-    #more {
+    .see-less {
+        display: none;
+    }
+
+
+    .more {
         display: none;
     }
 
@@ -139,7 +163,8 @@ export default {
 }
 
 .portfolio {
-    margin-top: 10rem;
+    margin-top: 8rem;
+    /* margin-bottom: 10rem; */
     max-width: 100%;
     height: 110vh;
 }

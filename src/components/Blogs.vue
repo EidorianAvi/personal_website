@@ -44,7 +44,7 @@ export default {
     }
 
     .section-heading h1 {
-        font-size: 6rem;
+        font-size: 5rem;
         opacity: .5;
         text-align: center;
     }
@@ -53,8 +53,12 @@ export default {
         font-size: 1.75rem;
     }
 
+    ul {
+        width: 80vw;
+    }
+
     li {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 2rem;
         padding-left: 1rem;
         font-style: italic;
