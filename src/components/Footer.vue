@@ -1,8 +1,9 @@
 <template>
   <div class="copyright">
     <footer>
-        <div class="up" id="up">
-            <p>&copy; 2020 Adrian Avila</p>
+        <p>&copy; 2020 Adrian Avila</p>
+        <div ref="#" class="up" id="up">
+            <i class="fa fa-chevron-up"></i>
         </div>
     </footer>
   </div>
@@ -24,9 +25,27 @@ export default {
 
 
     .copyright {
-      max-width: 95%;
+      text-align: center;
+      background: black;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .up {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      background-color: lightgrey;
+      top: -2.5rem;
+      right: 2rem;
+      border-radius: 100%;
       display: flex;
-      justify-content: flex-end;
+    }
+
+    .up i {
+      color: black;
+      font-size: 2rem;
+      margin: auto;
     }
 
     p {
@@ -55,6 +74,7 @@ export default {
   clear: both;
   display: table;
 }
+
 
 
 </style>

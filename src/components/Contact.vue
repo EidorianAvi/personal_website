@@ -3,20 +3,24 @@
       <div class="container">
           <h1>Contact</h1>
           <div class="contact-form">
-            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwgxAEzOt1Zxd57Np597YokCibEbr4a8v8m8NfXZA/exec" >
+            <form 
+            class="gform" 
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbwgxAEzOt1Zxd57Np597YokCibEbr4a8v8m8NfXZA/exec"
+            data-email="reneavila1993@gmail.com" >
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="name" name="name" placeholder="Name" required>
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" placeholder="Why you're reaching out" required><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Please enter your email" required><br>
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="10" rows="10"></textarea><br>
+                <textarea name="message" id="message" cols="10" rows="10" required></textarea><br>
                 <input type="submit" value="Let's chat">
             </form>
           </div>
-          <div style="display:none" class="thankyou_message">
-            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+          <div class="thankyou-message">
+            <!-- <h2><em>Thanks</em> for reaching out!</h2> -->
           </div>
       </div>
   </div>
