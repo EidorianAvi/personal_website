@@ -8,6 +8,7 @@
                 </ul>
             </div>
         </div>
+        <div class="border"></div>
     </div>
 </template>
 
@@ -27,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
@@ -36,11 +37,18 @@ export default {
     }
 
     .blogs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: 80vh;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 60vh;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .section-heading h1 {
@@ -65,6 +73,12 @@ export default {
         text-decoration-line: underline;
         opacity: .7;
         font-weight: 300;
+    }
+
+    .border {
+        margin-left: 35vw;
+        width: 30vw;
+        border-bottom: 1px solid lightgrey;
     }
 }
 

@@ -3,7 +3,9 @@
       <div class="container">
           <h1>Contact</h1>
           <div class="contact-form">
-            <form action="mailto:reneavila1993@gmail.com" >
+            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwgxAEzOt1Zxd57Np597YokCibEbr4a8v8m8NfXZA/exec" >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name">
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" placeholder="Why you're reaching out" required><br>
                 <label for="email">Email:</label>
@@ -13,7 +15,9 @@
                 <input type="submit" value="Let's chat">
             </form>
           </div>
-          <!-- <h6>I'd love to hear from you</h6> -->
+          <div style="display:none" class="thankyou_message">
+            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+          </div>
       </div>
   </div>
 </template>
@@ -59,9 +63,10 @@ export default {
     }
 
     label {
+        margin-top: 1rem;
         width: 100%;
         text-align: left;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     input {

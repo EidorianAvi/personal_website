@@ -6,6 +6,7 @@
     <Portfolio /> 
     <Blogs /> 
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 // import SideNavigator from './components/SideNavigator';
 
 export default {
@@ -25,6 +27,7 @@ export default {
     Portfolio,
     Blogs,
     Contact,
+    Footer
     // SideNavigator,
   }
 }

@@ -66,11 +66,17 @@ export default {
     }
 
     .social-media {
-        display: flex;
-        justify-content: center;
         width: 100%;
         margin-bottom: 6rem;
     }
+    
+    .nav-list{ 
+        display: flex;
+        justify-content: space-evenly;
+        opacity: .8;
+    }
+
+
 
     .border {
         margin-left: 35vw;
@@ -142,10 +148,6 @@ li {
     list-style-type: none;
 }
 
-.nav-list{ 
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .social-media {
     margin-top: 5rem;

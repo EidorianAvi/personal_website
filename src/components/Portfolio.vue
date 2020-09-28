@@ -70,7 +70,7 @@ export default {
     .portfolio {
         margin-top: 8rem;
         max-width: 100%;
-        height: 110vh;
+        height: auto;
     }
 
     .section-heading h1 {
@@ -137,7 +137,7 @@ export default {
     }
 
     .border {
-        margin-top: 16vh;
+        margin-top: 15vh;
         margin-left: 35vw;
         width: 30vw;
         border-bottom: 1px solid lightgrey;
