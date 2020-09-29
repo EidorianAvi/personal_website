@@ -1,5 +1,11 @@
 <template>
-    <div class="blogs" id="blogs">
+    <div class="blogs" id="blogs"
+            data-aos="zoom-out"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            >
         <div class="container">
             <div class="section-heading">
                 <h1>Blog Posts</h1>

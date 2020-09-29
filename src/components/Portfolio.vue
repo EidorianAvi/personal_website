@@ -1,5 +1,10 @@
 <template>
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio" id="portfolio"
+            data-aos="slide-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
         <div class="container">
             <div class="section-heading">
                 <h1>Portfolio</h1>

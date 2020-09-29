@@ -1,5 +1,5 @@
 <template>
-    <div class="row banner-page">
+    <div class="row banner-page" >
         <div class="col-12 banner-text">
             <h1>Adrian Avila</h1>
             <h6>Full Stack Software Engineer</h6>

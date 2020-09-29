@@ -1,5 +1,10 @@
 <template>
-  <div class="contact" id="contact">
+  <div class="contact" id="contact"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
       <div class="container">
           <h1>Contact</h1>
           <div class="contact-form">
