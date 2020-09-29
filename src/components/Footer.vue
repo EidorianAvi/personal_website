@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
@@ -52,16 +52,18 @@ export default {
       width: 5rem;
       height: 5rem;
       background-color: lightgrey;
-      top: -2.5rem;
       right: 2rem;
+      bottom: 2.5rem;
       border-radius: 100%;
       display: flex;
     }
 
+
     .up i {
       color: black;
       font-size: 2rem;
-      margin: auto;
+      margin-left: 1.5rem;
+      margin-top: 2.5rem;
     }
 
     p {

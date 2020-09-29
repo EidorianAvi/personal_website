@@ -1,10 +1,9 @@
 <template>
     <div class="blogs" id="blogs"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
             >
         <div class="container">
             <div class="section-heading">

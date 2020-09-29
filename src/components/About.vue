@@ -4,11 +4,10 @@
         <div  
         class="portfolio-image" 
         @click="cycleImage"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+        data-aos="zoom-out"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         >
             <img 
             :src="require(`../assets/images/${ this.currentImage || 'portrait.jpg' }`)" 
@@ -18,11 +17,10 @@
         </div>
         <div 
         class="about-details"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         >
             <div class="about-heading">
                 <h1>About</h1>

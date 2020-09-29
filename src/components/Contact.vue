@@ -1,10 +1,9 @@
 <template>
   <div class="contact" id="contact"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
     >
       <div class="container">
           <h1>Contact</h1>
@@ -32,18 +31,14 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
-<style>
+<style scoped>
 @media only screen and (max-width: 600px) {
     
     [class*="col-"] {
     width: 100%;
     }
+
+
 
     .contact { 
         display: flex;
