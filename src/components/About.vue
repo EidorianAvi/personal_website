@@ -1,8 +1,12 @@
 <template>
   <div class="about-page">
     <div class="container">
-        <div class="portfolio-image">
-            <img src="../assets/images/portrait.jpg" alt="Hiking Adventure" class="portrait">
+        <div  class="portfolio-image" @click="cycleImage">
+            <img 
+            :src="require(`../assets/images/${ this.currentImage || 'portrait.jpg' }`)" 
+            alt="About images" 
+            class="portrait">
+            <p>{{ this.currentDescription }}</p>
         </div>
         <div class="about-details">
             <div class="about-heading">
@@ -38,7 +42,36 @@
 
 <script>
 export default {
+    data() {
+        return {
+            n: 0,
+            currentImage: "",
+            currentDescription: "", 
+            aboutImages: [
+                {title: 'portrait.jpg', description: ''},
+                {title: 'Barbie.jpg', description: 'I have a lovely lady, Barbie'},
+                {title: 'Riku.jpeg', description: 'This is my little boy Riku'},
+                {title: 'travel1.jpg', description: 'I enjoy traveling'},
+                {title: 'Family2.jpeg', description: "Family means.."},
+                {title: 'Family.jpg', description: "..a lot.."},
+                {title: 'Family3.jpg', description: "...to me"},
+                {title: 'books.jpg', description: 'I collect Star Wars books and comics'},
+                {title: 'Ramen.jpg', description: "... and I'm always up for a bowl of Ramen"},
+            ],
+        }
+    },
+    methods: {
+        cycleImage() {
+            if(this.n == this.aboutImages.length - 1) {
+                this.n = 0;
+            } else {
+                this.n+=1;
+            }
 
+            this.currentImage = this.aboutImages[this.n].title;
+            this.currentDescription = this.aboutImages[this.n].description;
+        }
+    }
 }
 </script>
 
@@ -48,6 +81,22 @@ export default {
 @media only screen and (max-width: 600px) {
     [class*="col-"] {
     width: 100%;
+    }
+
+    .portfolio-image {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .portfolio-image img{
+        max-height: 40vh;
+        width: auto;
+        max-width: 80vw;
+    }
+
+    .portfolio-image p {
+        padding-top: 1rem;
+        font-size: 1.3rem;
     }
 
     .about-heading h1 {
@@ -83,7 +132,6 @@ export default {
         width: 30vw;
         border-bottom: 1px solid lightgrey;
     }
-
 
 
 }
@@ -137,6 +185,8 @@ export default {
 .portfolio-image {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .portrait {
