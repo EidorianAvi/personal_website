@@ -4,11 +4,11 @@
         <div  
         class="portfolio-image" 
         @click="cycleImage"
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
         >
             <img 
             :src="require(`../assets/images/${ this.currentImage || 'portrait.jpg' }`)" 
@@ -18,11 +18,11 @@
         </div>
         <div 
         class="about-details"
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
         >
             <div class="about-heading">
                 <h1>About</h1>
@@ -30,14 +30,7 @@
             <p>
                Welcome to my page, make yourself comfortable. The name is Adrian, and I'm an up and coming Full Stack Software Engineer just looking to live, learn and build. Two things I believe down to my core are 1. there's always room for improvement and 2. Han shot first. In my free time you can likely find me arguing with my dog, watching/reading Star Wars or learning spoken and written languages, i'm currently working on my Spanish and Japanese. I have dreams of traveling far and wide and building bigger and better for myself and the world around me. If you'd like to see more on my personal life click on my mug above. 
             </p>
-            <div 
-            class="social-media"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            >
+            <div class="social-media">
                 <ul class="nav-list">
                     <li>
                         <a href="https://www.linkedin.com/in/eidorianavi/" class="icon-link">

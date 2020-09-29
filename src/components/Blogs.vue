@@ -1,6 +1,6 @@
 <template>
     <div class="blogs" id="blogs"
-            data-aos="zoom-out"
+            data-aos="fade-left"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"

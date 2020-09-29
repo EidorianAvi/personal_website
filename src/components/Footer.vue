@@ -2,7 +2,7 @@
   <div class="copyright">
     <footer>
         <p>&copy; 2020 Adrian Avila</p>
-        <div ref="#" class="up" id="up">
+        <div @click="scrollUp" ref="#" class="up" id="up">
             <i class="fa fa-chevron-up"></i>
         </div>
     </footer>
@@ -11,7 +11,22 @@
 
 <script>
 export default {
+  methods: {
+    scrollUp () {
+        document.getElementById('app').scrollIntoView({behavior: 'smooth'});
+          let to = this.moveToDown
+            ? this.$refs.description.offsetTop - 60
+            : 0
 
+            window.scroll({
+              top: to,
+              left: 0,
+              behavior: 'smooth'
+            })
+
+            this.moveToDown = !this.moveToDown
+    }
+  }
 }
 </script>
 
@@ -25,6 +40,7 @@ export default {
 
 
     .copyright {
+      width: 100%;
       text-align: center;
       background: black;
       padding: 2rem;
