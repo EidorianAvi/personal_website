@@ -36,7 +36,7 @@
     .banner-text {
         width: 80vw;
         margin-left: 10vw; 
-        margin-top: 25rem;
+        margin-top: 22vh;
         font-family: 'Permanent Marker', cursive;
         text-align: center;
     }
@@ -56,8 +56,8 @@
     }
 
     .css-typing {
-      margin-top: 2rem;
-      margin-left: 9rem;
+      margin-top: 2vh;
+      margin-left: 22vw;
     }
 
 

@@ -9,7 +9,7 @@
           <h1>Contact</h1>
           <div class="contact-form">
             <form 
-            class="gform" 
+            class="gform pure-form pure-form-stacked" 
             method="POST" 
             action="https://script.google.com/macros/s/AKfycbwgxAEzOt1Zxd57Np597YokCibEbr4a8v8m8NfXZA/exec"
             data-email="reneavila1993@gmail.com" >
@@ -21,15 +21,30 @@
                 <input type="email" id="email" name="email" placeholder="Please enter your email" required><br>
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" cols="10" rows="10" required></textarea><br>
-                <input type="submit" value="Let's chat">
+                <input @click="sendMessage" type="submit" value="Let's chat">
             </form>
           </div>
-          <div class="thankyou-message">
-            <!-- <h2><em>Thanks</em> for reaching out!</h2> -->
+          <div style="visibility:hidden;" id="thankyou_message">
+            <h2><em>Thanks</em> for reaching out!</h2>
           </div>
       </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    sendMessage() {
+      let form = document.querySelector('.gform');
+      let thanksMessage = document.querySelector('#thankyou_message');
+      
+      setTimeout(() => {form.reset()}, 2500);
+      setTimeout(() => {thanksMessage.style.visibility="visible"}, 2500);
+      setTimeout(() => {thanksMessage.style.visibility="hidden"}, 5000);
+    }
+  }
+}
+</script>
 
 <style scoped>
 @media only screen and (max-width: 600px) {
@@ -37,8 +52,6 @@
     [class*="col-"] {
     width: 100%;
     }
-
-
 
     .contact { 
         display: flex;
@@ -84,7 +97,12 @@
 
     input[type="submit"] {
         width: 30%;
-        margin-left: 20rem;
+        margin-left: 18rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+      text-align: center;
     }
 
 }
