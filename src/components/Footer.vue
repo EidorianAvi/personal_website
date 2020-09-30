@@ -1,5 +1,5 @@
 <template>
-  <div class="copyright">
+  <div class="col-12 copyright">
     <footer>
         <p>&copy; 2020 Adrian Avila</p>
         <div @click="scrollUp" ref="#" class="up" id="up">
@@ -85,6 +85,40 @@ export default {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+
+  
+    .copyright {
+      height: 3vh;
+      width: 100%;
+      text-align: center;
+      background: black;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .up {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      background-color: lightgrey;
+      right: 2rem;
+      bottom: 2.5rem;
+      border-radius: 100%;
+      display: flex;
+    }
+
+
+    .up i {
+      color: black;
+      font-size: 5rem;
+      margin-left: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    p {
+      font-size: 5rem;
+    }
 }
 
 .row::after {

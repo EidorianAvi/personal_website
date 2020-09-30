@@ -101,6 +101,46 @@ export default {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+   .blogs {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 60vh;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .section-heading h1 {
+        font-size: 20rem;
+        opacity: .5;
+        text-align: center;
+    }
+
+    ul {
+        width: 40vw;
+    }
+
+    li {
+        font-size: 6rem;
+        padding-top: 3vh;
+        font-style: italic;
+        text-decoration-line: underline;
+        opacity: .8;
+        font-weight: 300;
+    }
+
+    .border {
+        margin-left: 35vw;
+        width: 30vw;
+        border-bottom: 1px solid lightgrey;
+    }
 }
 
 .row::after {
