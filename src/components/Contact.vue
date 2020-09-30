@@ -1,5 +1,5 @@
 <template>
-  <div class="contact" id="contact"
+  <div class="col-12 contact" id="contact"
         data-aos="fade-right"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -68,11 +68,6 @@ export default {
         margin-bottom: 2rem;
     }
 
-    .contact h6 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
     form {
         width: 100%;
         display: flex;
@@ -89,6 +84,7 @@ export default {
 
     input {
         width: 100%;
+        padding: .2rem 1rem;
     }
 
     textarea {
@@ -121,6 +117,68 @@ export default {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+    .contact { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .container {
+      width: 45vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:center
+    }
+
+    .contact h1 { 
+        font-size: 20rem;
+        opacity: .5;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        margin-top: 2vh;
+        width: 100%;
+        text-align: left;
+        font-size: 6rem;
+    }
+
+    input {
+        width: 100%;
+        height: 2vh;
+        font-size: 4rem;
+        padding-left: 3rem;
+    }
+
+    textarea {
+        width: 100%;
+        height: 20vh
+    }
+
+    input[type="submit"] {
+        width: 20%;
+        height: 4vh;
+        margin-top: 2vh;
+        margin-left: 35vw;
+        margin-bottom: 4vh;
+    }
+
+    h2 {
+      font-size: 10rem;
+      text-align: center;
+    }
+
 }
 
 .row::after {

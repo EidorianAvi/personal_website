@@ -89,7 +89,7 @@ export default {
 
   
     .copyright {
-      height: 3vh;
+      height: 4vh;
       width: 100%;
       text-align: center;
       background: black;
@@ -98,27 +98,28 @@ export default {
     }
 
     .up {
+      cursor: pointer;
       position: absolute;
-      width: 5rem;
-      height: 5rem;
+      width: 6vw;
+      height: 6vh;
       background-color: lightgrey;
-      right: 2rem;
-      bottom: 2.5rem;
+      right: 4rem;
+      bottom: 1vh;
       border-radius: 100%;
       display: flex;
     }
 
-
     .up i {
       color: black;
-      font-size: 5rem;
-      margin-left: 1.5rem;
-      margin-top: 2.5rem;
+      font-size: 8rem;
+      margin-left: 2.3vw;
+      margin-top: 3vh;
     }
 
     p {
       font-size: 5rem;
     }
+
 }
 
 .row::after {
@@ -127,6 +128,22 @@ export default {
   display: table;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
 
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
+  }
+}
 
 </style>
