@@ -1,5 +1,5 @@
 <template>
-    <div class="row banner-page" >
+    <div class="row banner-page col-12" >
         <div class="col-12 banner-text">
             <h1>Adrian Avila</h1>
             <h6>Full Stack Software Engineer</h6>
@@ -60,6 +60,43 @@
       margin-left: 22vw;
     }
 
+    .css-typing p {
+      border-right: .15em solid lightgray;
+      font-size: 1.3rem;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .css-typing p:nth-child(1) {
+      width: 13em;
+      -webkit-animation: type 2s steps(40, end);
+      animation: type 2s steps(40, end);
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    .css-typing p:nth-child(2) {
+      width: 11.5em;
+      opacity: 0;
+      -webkit-animation: type2 2s steps(40, end);
+      animation: type2 2s steps(40, end);
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    .css-typing p:nth-child(3) {
+      width: 13em;
+      opacity:  0;
+      -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+      animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+      -webkit-animation-delay: 4s;
+      animation-delay: 4s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
 
 }
 
@@ -77,7 +114,87 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+
+
+    .banner-page {
+      background: url('../assets/images/journey.jpg') no-repeat center fixed;
+      background-size: 100% auto;
+      display: flex;
+      align-items: flex-start;
+      height: 100vh;
+    }
+
+    .banner-text {
+      width: 80vw;
+      margin-left: 10vw; 
+      margin-top: 22vh;
+      font-family: 'Permanent Marker', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 33rem;
+      background: rgb(232,232,236);
+      background: linear-gradient(0deg, #93a5cf  0%,  #e4efe9  100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    
+    h6 { 
+      font-size: 10rem;
+      font-weight: 300;
+    }
+
+    .css-typing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      margin-top: 2vh;
+    }
+
+    .css-typing p {
+      border-right: .15em solid lightgray;
+      font-size: 7rem;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .css-typing p:nth-child(1) {
+      width: 13em;
+      -webkit-animation: type 2s steps(40, end);
+      animation: type 2s steps(40, end);
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    .css-typing p:nth-child(2) {
+      width: 11.5em;
+      opacity: 0;
+      -webkit-animation: type2 2s steps(40, end);
+      animation: type2 2s steps(40, end);
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    .css-typing p:nth-child(3) {
+      width: 13em;
+      opacity:  0;
+      -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+      animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+      -webkit-animation-delay: 4s;
+      animation-delay: 4s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
 }
+
 
 .row::after {
   content: "";
@@ -85,42 +202,7 @@
   display: table;
 }
 
-.css-typing p {
-  border-right: .15em solid lightgray;
-  font-size: 1.3rem;
-  white-space: nowrap;
-  overflow: hidden;
-}
 
-.css-typing p:nth-child(1) {
-  width: 13em;
-  -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.css-typing p:nth-child(2) {
-  width: 11.5em;
-  opacity: 0;
-  -webkit-animation: type2 2s steps(40, end);
-  animation: type2 2s steps(40, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.css-typing p:nth-child(3) {
-  width: 13em;
-  opacity:  0;
-  -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-  animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
 
 /* Animations */
 
@@ -156,7 +238,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid lightgray;
   }
   100% {
     opacity: 1;
@@ -172,7 +254,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid lightgray;
   }
   100% {
     opacity: 1;
