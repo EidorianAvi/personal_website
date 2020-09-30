@@ -1,8 +1,8 @@
 <template>
-  <div class="about-page">
-    <div class="container">
+  <div class="col-12 about-page">
+    <div class="col-10 container">
         <div  
-        class="portfolio-image" 
+        class="col-5 portfolio-image" 
         @click="cycleImage"
         data-aos="zoom-out"
         data-aos-delay="50"
@@ -16,7 +16,7 @@
             <p>{{ this.currentDescription }}</p>
         </div>
         <div 
-        class="about-details"
+        class="col-5 about-details"
         data-aos="zoom-in"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -26,7 +26,7 @@
                 <h1>About</h1>
             </div>
             <p>
-               Welcome to my page, make yourself comfortable. The name is Adrian, and I'm an up and coming Full Stack Software Engineer just looking to live, learn and build. Two things I believe down to my core are 1. there's always room for improvement and 2. Han shot first. In my free time you can likely find me arguing with my dog, watching/reading Star Wars or learning spoken and written languages, i'm currently working on my Spanish and Japanese. I have dreams of traveling far and wide and building bigger and better for myself and the world around me. If you'd like to see more on my personal life click on my mug above. 
+               Welcome to my page, make yourself comfortable. The name is Adrian, and I'm an up and coming Full Stack Software Engineer just looking to live, learn and build. Two things I believe down to my core are 1. there's always room for improvement and 2. Han shot first. In my free time you can likely find me arguing with my dog, watching/reading Star Wars or learning spoken and written languages, i'm currently working on my Spanish and Japanese. I have dreams of traveling far and wide and building bigger and better for myself and the world around me. If you'd like to see more on my personal life click on my mug <span class="above">above</span><span class="left">to the left</span>. 
             </p>
             <div class="social-media">
                 <ul class="nav-list">
@@ -96,9 +96,26 @@ export default {
     width: 100%;
     }
 
+    .about-page {
+        margin-top: 5rem;
+        max-width: 100%;
+        height: 110vh;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     .portfolio-image {
         height: 40vh;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .portfolio-image img{
@@ -127,6 +144,14 @@ export default {
         line-height: 2rem;
     }
 
+    .above {
+        display: inline;
+    }
+
+    .left {
+        display: none;
+    }
+
     .social-media {
         width: 100%;
         margin-bottom: 6rem;
@@ -144,6 +169,12 @@ export default {
         margin-left: 35vw;
         width: 30vw;
         border-bottom: 1px solid lightgrey;
+    }
+
+    .social-media i{
+        font-size: 5rem;
+        transition: color 650ms;
+        opacity: .9;
     }
 
 
@@ -164,10 +195,79 @@ export default {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  .about-heading h1 {
-    font-size: 10rem;
-    opacity: .5;
+    .about-page {
+        display: flex;
+        justify-content: center;
     }
+    .container {
+        height: 110vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .portfolio-image{
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .portfolio-image img{
+        max-height: 50%;
+        width: auto;
+    }
+
+
+    .portfolio-image p {
+        padding-top: 2rem;
+        font-size: 5rem;
+        opacity: .9;
+    }
+
+    .about-details {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .about-heading h1 {
+        font-size: 30rem;
+        opacity: .5;
+        padding-bottom: 3rem;
+    }
+
+    .about-details p {
+        font-size: 5rem;
+        line-height: 1.4;
+        padding-bottom: 3vh;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+    
+    .about-details ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about-details i {
+        font-size: 16rem;
+    }
+
+    .above {
+        display: none;
+    }
+
+    .left {
+        display: inline;
+    }
+
+
 }
 
 .row::after {
@@ -176,34 +276,10 @@ export default {
   display: table;
 }
 
-.about-page {
-    margin-top: 5rem;
-    max-width: 100%;
-    height: 110vh;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
 .about-heading {
     text-align: center;
     text-transform: uppercase;
-}
-
-
-.portfolio-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.portrait {
-    width: 60%;    
 }
 
 
@@ -216,10 +292,6 @@ li {
     margin-top: 5rem;
 }
 
-.social-media i{
-    font-size: 5rem;
-    transition: color 650ms;
-    opacity: .9;
-}
+
 
 </style>

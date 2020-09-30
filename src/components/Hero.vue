@@ -134,7 +134,7 @@
     }
 
     h1 {
-      font-size: 33rem;
+      font-size: 30rem;
       background: rgb(232,232,236);
       background: linear-gradient(0deg, #93a5cf  0%,  #e4efe9  100%);
       -webkit-text-fill-color: transparent;

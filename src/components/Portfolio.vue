@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio" id="portfolio"
+    <div class="col-12 portfolio" id="portfolio"
         data-aos="fade-right"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -164,10 +164,26 @@ export default {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  
+  .portfolio {
+      height: 100vh;
+  }
 
   .section-heading h1 {
-    font-size: 1rem;
+    font-size: 35rem;
+    text-align: center;
+    padding-top: 10vh;
     opacity: .5;
+    }
+
+    .demo-videos {
+        display: flex;
+    }
+
+    .demo-videos h1 {
+        width: 100vw;
+        font-size: 20rem;
+        margin-bottom: 1rem;
     }
 
 }
