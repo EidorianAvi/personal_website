@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 about-page">
-    <div class="col-10 container">
+    <div class="col-12 container">
         <div  
         class="col-5 portfolio-image" 
         @click="cycleImage"
@@ -47,9 +47,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="border"></div>
         </div>
     </div>      
+     <div class="border"></div>
   </div>
 </template>
 
@@ -164,7 +164,6 @@ export default {
     }
 
 
-
     .border {
         margin-left: 35vw;
         width: 30vw;
@@ -195,18 +194,14 @@ export default {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-    .about-page {
+    .container {
+        height: 100vh;
         display: flex;
         justify-content: center;
     }
-    .container {
-        height: 110vh;
-        display: flex;
-        justify-content: space-around;
-    }
 
-    .portfolio-image{
-        height: 110vh;
+    .portfolio-image {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -214,9 +209,9 @@ export default {
     }
 
 
-    .portfolio-image img{
-        max-height: 50%;
-        width: auto;
+    .portfolio-image img {
+        max-height: 60%;
+        max-width: 60%;
     }
 
 
@@ -265,6 +260,12 @@ export default {
 
     .left {
         display: inline;
+    }
+    
+    .border {
+        margin-left: 35vw;
+        width: 30vw;
+        border-bottom: 1px solid lightgrey;
     }
 
 

@@ -9,11 +9,11 @@
             <div class="section-heading">
                 <h1>Portfolio</h1>
             </div>
+            <div class="recent-projects">
+                <h1>Recent Projects</h1>
+            </div>
             <div class="demo-videos">
                 <div class="portfolio-item">
-                    <div class="recent-projects">
-                        <h1>Recent Projects</h1>
-                    </div>
                     <h2>smallTalk</h2>
                     <div class="iframe-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/aZMOCxSa3Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -35,8 +35,8 @@
                     <p>A common problem we all face is that our Star Wars collection is just getting larger by the day and it's <span class="see-more-3" @click="expandDescription(3)">...see more</span><span class="more-3">getting difficult to keep track. The Jedi Archives were created to have one place to store all Novels and Graphic Novels for collection management. Technologies used were: JavaScript, Ruby on Rails, CSS3, HTML5.</span><span class="see-less-3" @click="expandDescription(3)">...see less</span></p>
                 </div>
             </div>
-        </div>
         <div class="border"></div>
+        </div>
     </div>
 </template>
 
@@ -96,7 +96,6 @@ export default {
         font-weight: 300;
         opacity: .8;
         text-align: left;
-        /* text-decoration: underline; */
     }
 
     .demo-videos h2 {
@@ -165,25 +164,80 @@ export default {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
-  .portfolio {
-      height: 100vh;
-  }
+    .portfolio {
+          height: 100vh;
+    }
 
-  .section-heading h1 {
-    font-size: 35rem;
-    text-align: center;
-    padding-top: 10vh;
-    opacity: .5;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .section-heading h1 {
+        margin-top: 10vh;
+        font-size: 30rem;
+        text-align: center;
+        opacity: .5;
+    }
+
+    .recent-projects {
+        margin-left: 4vw;
+        margin-bottom: 10vh;
+        width: 30%;
+        border-bottom: 1px lightgrey solid;
+    }
+
+    .recent-projects h1 {
+        font-size: 10rem;
+        font-weight: 300;
+        opacity: .7;
     }
 
     .demo-videos {
+        width: 100vw;
         display: flex;
+        justify-content: space-evenly;
     }
 
-    .demo-videos h1 {
-        width: 100vw;
-        font-size: 20rem;
-        margin-bottom: 1rem;
+    .demo-videos h2 {
+        font-size: 5rem;
+        padding-bottom: 2vh;
+    }
+
+    .iframe-container iframe{
+        height: 25vh;
+        width: 25vw;
+    }
+
+    p {
+        padding-top: 1vh;
+        width: 25vw;
+        font-size: 4rem;
+    }
+
+    .see-more-1, .see-more-2, .see-more-3 {
+        display: inline;
+        color: grey;
+        font-weight: 600;
+    }
+
+    .more-1, .more-2, .more-3 {
+        display: none;
+    }
+
+    .see-less-1, .see-less-2, .see-less-3 {
+        display: none;
+        color: grey;
+        font-weight: 600;
+    }
+
+    .border {
+        margin-top: 20vh;
+        margin-left: 35vw;
+        width: 30vw;
+        border-bottom: 1px solid lightgrey;
     }
 
 }
