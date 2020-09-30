@@ -5,9 +5,10 @@
         class="col-5 portfolio-image" 
         @click="cycleImage"
         data-aos="zoom-out"
-        data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-duration="1500"
         data-aos-easing="ease-in-out"
+        data-aos-once="false"
         >
             <img 
             :src="require(`../assets/images/${ this.currentImage || 'portrait.jpg' }`)" 
@@ -18,9 +19,10 @@
         <div 
         class="col-5 about-details"
         data-aos="zoom-in"
-        data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-duration="1500"
         data-aos-easing="ease-in-out"
+        data-aos-once="false"
         >
             <div class="about-heading">
                 <h1>About</h1>
@@ -195,6 +197,7 @@ export default {
   .col-12 {width: 100%;}
 
     .container {
+        overflow: hidden;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -216,8 +219,8 @@ export default {
 
 
     .portfolio-image p {
-        padding-top: 2rem;
-        font-size: 5rem;
+        padding-top: 3rem;
+        font-size: 7rem;
         opacity: .9;
     }
 
@@ -236,7 +239,7 @@ export default {
     }
 
     .about-details p {
-        font-size: 5rem;
+        font-size: 7rem;
         line-height: 1.4;
         padding-bottom: 3vh;
     }

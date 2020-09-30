@@ -1,8 +1,8 @@
 <template>
     <div class="blogs" id="blogs"
         data-aos="fade-left"
-        data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-delay="150"
+        data-aos-duration="1500"
         data-aos-easing="ease-in-out"
             >
         <div class="container">
@@ -128,7 +128,7 @@ export default {
     }
 
     li {
-        font-size: 6rem;
+        font-size: 7rem;
         padding-top: 3vh;
         font-style: italic;
         text-decoration-line: underline;

@@ -1,7 +1,7 @@
 <template>
   <div class="col-12 contact" id="contact"
         data-aos="fade-right"
-        data-aos-delay="50"
+        data-aos-delay="300"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
     >
@@ -89,6 +89,7 @@ export default {
 
     textarea {
         width: 100%;
+        padding: .5rem;
     }
 
     input[type="submit"] {
@@ -157,18 +158,22 @@ export default {
     input {
         width: 100%;
         height: 2vh;
-        font-size: 4rem;
+        font-size: 6rem;
         padding-left: 3rem;
     }
 
     textarea {
         width: 100%;
-        height: 20vh
+        height: 20vh;
+        font-size: 6rem;
+        padding: 1.5rem;
     }
 
     input[type="submit"] {
-        width: 20%;
-        height: 4vh;
+        font-size: 6rem;
+        font-weight: bold;
+        width: 15%;
+        height: 3vh;
         margin-top: 2vh;
         margin-left: 35vw;
         margin-bottom: 4vh;

@@ -89,6 +89,7 @@ export default {
 
   
     .copyright {
+      overflow: hidden;
       height: 4vh;
       width: 100%;
       text-align: center;
@@ -118,6 +119,7 @@ export default {
 
     p {
       font-size: 5rem;
+      padding: 5rem;
     }
 
 }
@@ -128,22 +130,5 @@ export default {
   display: table;
 }
 
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-
-  }
-}
 
 </style>

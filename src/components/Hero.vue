@@ -161,6 +161,7 @@
       font-size: 7rem;
       white-space: nowrap;
       overflow: hidden;
+      padding: 0;
     }
 
     .css-typing p:nth-child(1) {

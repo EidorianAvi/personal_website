@@ -1,8 +1,8 @@
 <template>
     <div class="col-12 portfolio" id="portfolio"
         data-aos="fade-right"
-        data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-duration="1500"
         data-aos-easing="ease-in-out"
     >
         <div class="container">
