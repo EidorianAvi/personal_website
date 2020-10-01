@@ -232,7 +232,7 @@ export default {
 
 
     .portfolio-image img {
-        width: 100%;
+        max-width: 100%;
         max-height: 100%;
         cursor: pointer;
     }
@@ -276,7 +276,7 @@ export default {
     }
 
     .about-details i {
-        font-size: 10rem;
+        font-size: 6rem;
     }
 
     .above {

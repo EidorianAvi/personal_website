@@ -134,7 +134,7 @@
     }
 
     h1 {
-      font-size: 10rem;
+      font-size: 8rem;
       background: rgb(232,232,236);
       background: linear-gradient(0deg, #93a5cf  0%,  #e4efe9  100%);
       background-clip: border-box;
@@ -144,7 +144,7 @@
 
     
     h6 { 
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 300;
     }
 
@@ -159,7 +159,7 @@
 
     .css-typing p {
       border-right: .15em solid lightgray;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       white-space: nowrap;
       overflow: hidden;
       padding: 0;

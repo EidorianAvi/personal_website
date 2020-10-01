@@ -165,7 +165,7 @@ export default {
   .col-12 {width: 100%;}
   
     .portfolio {
-          height: 100vh;
+        height: 100vh;
     }
 
     .container {
@@ -177,7 +177,7 @@ export default {
 
     .section-heading h1 {
         margin-top: 10vh;
-        font-size: 30rem;
+        font-size: 10rem;
         text-align: center;
         opacity: .5;
     }
@@ -190,7 +190,7 @@ export default {
     }
 
     .recent-projects h1 {
-        font-size: 10rem;
+        font-size: 4rem;
         font-weight: 300;
         opacity: .7;
     }
@@ -202,7 +202,7 @@ export default {
     }
 
     .demo-videos h2 {
-        font-size: 5rem;
+        font-size: 2rem;
         padding-bottom: 2vh;
     }
 
@@ -211,10 +211,10 @@ export default {
         width: 25vw;
     }
 
-    p {
+    .portfolio-item p  {
         padding-top: 1vh;
         width: 25vw;
-        font-size: 4rem;
+        font-size: 1.5rem;
     }
 
     .see-more-1, .see-more-2, .see-more-3 {

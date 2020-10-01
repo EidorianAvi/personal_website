@@ -135,7 +135,7 @@ export default {
     }
 
     .contact h1 { 
-        font-size: 20rem;
+        font-size: 10rem;
         opacity: .5;
         text-align: center;
         margin-bottom: 2vh;
@@ -152,35 +152,35 @@ export default {
         margin-top: 2vh;
         width: 100%;
         text-align: left;
-        font-size: 6rem;
+        font-size: 2rem;
     }
 
     input {
         width: 100%;
         height: 2vh;
-        font-size: 6rem;
-        padding-left: 3rem;
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
     }
 
     textarea {
         width: 100%;
         height: 20vh;
-        font-size: 6rem;
-        padding: 1.5rem;
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
     input[type="submit"] {
-        font-size: 6rem;
-        font-weight: bold;
+        font-size: 1.3rem;
+        font-weight: italic;
         width: 15%;
-        height: 3vh;
+        height: 4vh;
         margin-top: 2vh;
         margin-left: 35vw;
         margin-bottom: 4vh;
     }
 
     h2 {
-      font-size: 10rem;
+      font-size: 3rem;
       text-align: center;
     }
 
