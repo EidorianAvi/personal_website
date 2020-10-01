@@ -1,20 +1,23 @@
 <template>
   <div class="col-12 about-page">
     <div class="col-12 container">
-        <div  
-        class="col-5 portfolio-image" 
-        @click="cycleImage"
-        data-aos="zoom-out"
-        data-aos-delay="300"
-        data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
-        data-aos-once="false"
-        >
-            <img 
-            :src="require(`../assets/images/${ this.currentImage || 'portrait.jpg' }`)" 
-            alt="About images" 
-            class="portrait">
-            <p>{{ this.currentDescription }}</p>
+        <div class="col-5 portfolio-image" >
+            <div
+            class="image-box"
+            @click="cycleImage"
+            data-aos="zoom-out"
+            data-aos-delay="300"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+            >
+                <img 
+                :src="require(`../assets/images/${ this.currentImage || 'portrait.jpg' }`)" 
+                alt="About images" 
+                class="portrait">
+                <p>{{ this.currentDescription }}</p>
+            </div>
+            
         </div>
         <div 
         class="col-5 about-details"
@@ -65,13 +68,13 @@ export default {
             aboutImages: [
                 {title: 'portrait.jpg', description: ''},
                 {title: 'Barbie.jpg', description: 'I have a lovely lady, Barbie'},
-                {title: 'Riku.jpeg', description: 'This is my little boy Riku'},
+                {title: 'Riku2.jpeg', description: 'This is my little boy Riku'},
                 {title: 'travel1.jpg', description: 'I enjoy traveling'},
                 {title: 'Family2.jpeg', description: "Family means.."},
                 {title: 'Family.jpg', description: "..a lot.."},
                 {title: 'Family3.jpg', description: "...to me"},
                 {title: 'books.jpg', description: 'I collect Star Wars books and comics'},
-                {title: 'Ramen.jpg', description: "... and I'm always up for a bowl of Ramen"},
+                {title: 'Ramen2.jpg', description: "... and I'm always up for a bowl of Ramen"},
             ],
         }
     },
@@ -111,9 +114,17 @@ export default {
         justify-content: center;
     }
 
+    .image-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .portfolio-image {
         height: 40vh;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -121,12 +132,12 @@ export default {
     }
 
     .portfolio-image img{
-        max-height: 40vh;
-        width: auto;
-        max-width: 80vw;
+        max-width: 100%;
+        max-height: 90%; 
     }
 
     .portfolio-image p {
+        text-align: center;
         padding-top: 1rem;
         font-size: 1.3rem;
     }
@@ -211,14 +222,25 @@ export default {
         align-items: center;
     }
 
+    .image-box {
+        width: 30vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 
     .portfolio-image img {
-        max-height: 60%;
-        max-width: 60%;
+        width: 100%;
+        max-height: 100%;
+        cursor: pointer;
     }
 
 
     .portfolio-image p {
+        overflow: hidden;
+        text-align: center;
         padding-top: 3rem;
         font-size: 7rem;
         opacity: .9;

@@ -137,6 +137,7 @@
       font-size: 30rem;
       background: rgb(232,232,236);
       background: linear-gradient(0deg, #93a5cf  0%,  #e4efe9  100%);
+      background-clip: border-box;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
     }
