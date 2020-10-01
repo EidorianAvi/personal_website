@@ -132,7 +132,7 @@ export default {
     }
 
     .portfolio-image img{
-        max-width: 100%;
+        max-width: 80%;
         max-height: 90%; 
     }
 
