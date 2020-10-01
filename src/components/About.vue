@@ -242,7 +242,7 @@ export default {
         overflow: hidden;
         text-align: center;
         padding-top: 3rem;
-        font-size: 7rem;
+        font-size: 2rem;
         opacity: .9;
     }
 
@@ -255,13 +255,13 @@ export default {
     }
 
     .about-heading h1 {
-        font-size: 30rem;
+        font-size: 10rem;
         opacity: .5;
         padding-bottom: 3rem;
     }
 
     .about-details p {
-        font-size: 7rem;
+        font-size: 2rem;
         line-height: 1.4;
         padding-bottom: 3vh;
     }
@@ -276,7 +276,7 @@ export default {
     }
 
     .about-details i {
-        font-size: 16rem;
+        font-size: 10rem;
     }
 
     .above {
