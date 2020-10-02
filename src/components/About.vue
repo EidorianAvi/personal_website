@@ -104,7 +104,7 @@ export default {
     .about-page {
         margin-top: 5rem;
         max-width: 100%;
-        height: 110vh;
+        height: 100vh;
     }
 
     .container {

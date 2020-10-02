@@ -26,7 +26,8 @@
 
     .banner-page {
         background: url('../assets/images/journey2.jpg') no-repeat center center fixed;
-        background-size: 100% auto;
+        background-size: cover;
+        /* background-size: 100% auto; */
         display: flex;
         align-items: flex-start;
         height: 100vh;
