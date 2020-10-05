@@ -135,10 +135,11 @@ export default {
     }
 
     .contact h1 { 
-        font-size: 10rem;
+        font-size: 8rem;
         opacity: .5;
         text-align: center;
         margin-bottom: 2vh;
+        margin-top: 2vh;
     }
 
     form {

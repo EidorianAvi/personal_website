@@ -177,7 +177,7 @@ export default {
 
     .section-heading h1 {
         margin-top: 10vh;
-        font-size: 10rem;
+        font-size: 8rem;
         text-align: center;
         opacity: .5;
     }
@@ -190,7 +190,7 @@ export default {
     }
 
     .recent-projects h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 300;
         opacity: .7;
     }

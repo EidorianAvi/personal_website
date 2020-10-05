@@ -255,7 +255,7 @@ export default {
     }
 
     .about-heading h1 {
-        font-size: 10rem;
+        font-size: 8rem;
         opacity: .5;
         padding-bottom: 3rem;
     }

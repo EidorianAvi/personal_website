@@ -118,7 +118,7 @@ export default {
     }
 
     .section-heading h1 {
-        font-size: 10rem;
+        font-size: 8rem;
         opacity: .5;
         text-align: center;
     }
